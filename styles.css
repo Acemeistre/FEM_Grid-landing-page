@@ -206,3 +206,26 @@ h3 {
 footer {
     padding: var(--spacing-300);
 }
+
+@media (min-width: 768px) {
+  .hero {
+    padding-right: 16rem;
+    align-content: center;
+  }
+
+  .banner-title {
+    font-size: 3.7rem;
+  }
+
+  .banner-text {
+    font-size: 1.125rem;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats-component {
+    border-right: solid 1px var(--color-blue-400);
+}
+}
