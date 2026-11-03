@@ -20,8 +20,125 @@
 body {
     font-family: "Inter", sans-serif;
     color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-blue-600);
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
 }
 
 nav, h1, p, div, footer {
     background: var(--color-blue-600);
+}
+
+.logo, .menu {
+    padding: var(--spacing-300);
+}
+
+.logo {
+    align-items: left;
+    gap: 1rem;
+}
+
+span {
+    font-size: 1.75rem;
+    justify-items: center;
+}
+
+summary {
+    list-style: none;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    padding: var(--spacing-600) 0;
+    background-color: var(--color-blue-600);
+    min-height: 22rem;
+}
+
+.banner-title {
+    font-weight: 500;
+    font-size: 2.75rem;
+}
+
+.banner-text {
+    line-height: var(--spacing-400);
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-top: var(--spacing-300);
+}
+
+.banner-text, .banner-title {
+    padding: 0 var(--spacing-400);
+}
+
+header,
+.hero,
+.stats-component {
+    border-bottom: solid 1px var(--color-blue-400);
+}
+
+.stats-component {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 22rem; /* check the design */
+  padding: var(--spacing-300);
+  align-items: flex-end;
+}
+
+.stats-component img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.stat {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.stats-component h3,
+.stats-component p {
+  grid-column: 1 / -1; /* span both columns */
+  padding: .125rem;
+}
+
+.stat, 
+h3 {
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.stats-info {
+    font-weight: 300;
+}
+
+footer {
+    padding: var(--spacing-300);
 }
