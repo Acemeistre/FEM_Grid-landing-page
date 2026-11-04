@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Acemeistre/FEM_grid-landing-page]
-- Live Site URL: [https://acemeistre.github.io/FEM_grid-landing-page]
+- Solution URL: [https://github.com/Acemeistre/FEM_Grid-landing-page/]
+- Live Site URL: [https://acemeistre.github.io/FEM_Grid-landing-page/]
 
 ## My process
 
